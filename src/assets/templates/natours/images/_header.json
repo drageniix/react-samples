@@ -1,0 +1,7 @@
+[
+    {
+        "path": "logo",
+        "files": [{ "src": "natours/logo.png", "size": 200 }],
+        "alt": "header logo"
+    }
+]

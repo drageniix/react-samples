@@ -1,0 +1,12 @@
+[
+    {
+        "path": "recommendations.images",
+        "files": [
+            { "src": "trillo/user-1.jpg", "size": 200 },
+            { "src": "trillo/user-2.jpg", "size": 200 },
+            { "src": "trillo/user-3.jpg", "size": 200 },
+            { "src": "trillo/user-4.jpg", "size": 200 }
+        ],
+        "alt": "user recommendation profile"
+    }
+]

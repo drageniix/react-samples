@@ -1,0 +1,53 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin gradientImage(
+    $image,
+    $opacity: .8,
+    $color1: $color-primary-light, 
+    $color2: $color-primary-dark){
+    
+    background-image: 
+        linear-gradient(to right bottom, 
+            rgba($color1, $opacity), 
+            rgba($color2, $opacity)), 
+        url($image);
+    background-size: cover;
+    background-position: top;
+}
+
+@mixin gradientCards($opacity, $image1: '', $image2: '', $image3: ''){
+    &--1 {@include gradientImage($image1, $opacity, $color-secondary-light, $color-secondary-dark)}
+    
+    &--2 {@include gradientImage($image2, $opacity, $color-primary-light, $color-primary-dark)}
+
+    &--3 {@include gradientImage($image3, $opacity, $color-tertiary-light, $color-tertiary-dark)}
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// <600 <900 <1200 <1800 >1800
+//$breakpoint : phone tabPort tabLand desk deskBig
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content }
+    } @else if $breakpoint == tabPort {
+        @media only screen and (max-width: 56.25em) { @content }
+    } @else if $breakpoint == tabLand {
+        @media only screen and (max-width: 75em) { @content }
+    } @else if $breakpoint == desk {
+        @media only screen and (max-width: 112.5em) { @content }
+    } @else if $breakpoint == deskBig {
+        @media only screen and (min-width: 112.5em) { @content }
+    }
+}

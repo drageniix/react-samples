@@ -1,0 +1,23 @@
+[
+    {
+        "files": [
+            {
+                "src": "natours/header.jpg",
+                "size": 2000
+            }
+        ]
+    },
+    {
+        "files": [
+            {
+                "src": "natours/header.jpg"
+            }
+        ],
+        "alternates": [
+            {
+                "dest": "[name]-small.jpg",
+                "size": 1000
+            }
+        ]
+    }
+]

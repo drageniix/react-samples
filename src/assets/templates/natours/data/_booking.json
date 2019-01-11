@@ -1,0 +1,26 @@
+{
+    "title": "Start Booking Now?",
+    "button": "Next step",
+    "inputs": [
+        {
+            "id": "name",
+            "type": "text",
+            "placeholder": "Full Name"
+        },
+        {
+            "id": "email",
+            "type": "email",
+            "placeholder": "Email Address"
+        }
+    ],
+    "radio": [
+        {
+            "id": "small",
+            "text": "Small Tour group"
+        },
+        {
+            "id": "large",
+            "text": "Large Tour group"
+        }
+    ]
+}

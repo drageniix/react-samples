@@ -1,0 +1,22 @@
+[
+    {
+        "icon": "globe",
+        "title": "Explore the World",
+        "text": "Lorem"
+    },
+    {
+        "icon": "compass",
+        "title": "Meet Nature",
+        "text": "Lorem"
+    },
+    {
+        "icon": "map",
+        "title": "Find Your Way",
+        "text": "Lorem "
+    },
+    {
+        "icon": "heart",
+        "title": "Live a Healthier Life",
+        "text": "Lorem ipsum"
+    }
+]

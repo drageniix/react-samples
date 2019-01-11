@@ -1,0 +1,16 @@
+{
+    "reviewers" : [
+        {
+            "author" : "Nick Smith",
+            "date" : "Feb 23rd, 2018",
+            "text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.",
+            "rating" : 7.8
+        },
+        {
+            "author": "Mary Thomas",
+            "date": "Sep 13th, 2016",
+            "text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.",
+            "rating" : 9.3
+        }
+    ]
+}

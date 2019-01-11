@@ -1,0 +1,21 @@
+{
+    "legal" : "All rights reserved.",
+    "links" : [
+        {
+            "icon" : "home",
+            "text" : "Hotel"
+        },
+        {
+            "icon" : "aircraft",
+            "text" : "Flight"
+        },
+        {
+            "icon" : "key",
+            "text" : "Car Rental"
+        },
+        {
+            "icon" : "map",
+            "text" : "Tours"
+        }
+    ]
+}

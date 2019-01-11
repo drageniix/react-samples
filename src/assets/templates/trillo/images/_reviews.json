@@ -1,0 +1,15 @@
+[
+    {
+        "path": "reviewers.[].image",
+        "set": [
+            {
+                "files": [{ "src": "trillo/user-5.jpg", "size": 200 }],
+                "alt": "Profile Image"
+            },
+            {
+                "files": [{ "src": "trillo/user-6.jpg", "size": 200 }],
+                "alt": "Profile Image"
+            }
+        ]
+    }
+]

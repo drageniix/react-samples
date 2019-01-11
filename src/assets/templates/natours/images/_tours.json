@@ -1,0 +1,28 @@
+[
+    {
+        "path": "tours.[].popup.images",
+        "set": [
+            {
+                "files": [
+                    { "src": "natours/about-1.jpg", "size": 200 },
+                    { "src": "natours/about-2.jpg", "size": 200 }
+                ],
+                "alt": "tours image"
+            },
+            {
+                "files": [
+                    { "src": "natours/about-3.jpg", "size": 200 },
+                    { "src": "natours/about-1.jpg", "size": 200 }
+                ],
+                "alt": "tours image"
+            },
+            {
+                "files": [
+                    { "src": "natours/about-3.jpg", "size": 200 },
+                    { "src": "natours/about-2.jpg", "size": 200 }
+                ],
+                "alt": "tours image"
+            }
+        ]
+    }
+]

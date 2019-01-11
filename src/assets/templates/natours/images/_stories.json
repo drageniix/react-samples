@@ -1,0 +1,23 @@
+[
+    {
+        "path": "stories.[].image",
+        "set": [
+            {
+                "files": [{ "src": "natours/about-1.jpg", "size": 200 }],
+                "alt": "Just a test."
+            },
+            {
+                "files": [{ "src": "natours/about-2.jpg", "size": 200 }],
+                "alt": "Just a test."
+            },
+            {
+                "files": [{ "src": "natours/about-3.jpg", "size": 200 }],
+                "alt": "Just a test."
+            },
+            {
+                "files": [{ "src": "natours/about-2.jpg", "size": 200 }],
+                "alt": "Just a test."
+            }
+        ]
+    }
+]

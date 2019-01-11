@@ -1,0 +1,25 @@
+[
+    {
+        "path": "images",
+        "files": [
+            { "src": "natours/about-1.jpg", "size": 200 },
+            { "src": "natours/about-2.jpg", "size": 200 },
+            { "src": "natours/about-3.jpg", "size": 200 }
+        ],
+        "imageTemplate": {
+            "img": {
+                "sizes": "(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px",
+                "srcset": [
+                    {
+                        "dest": "[name]",
+                        "size": 300
+                    },
+                    {
+                        "dest": "[name]-large",
+                        "size": 1000
+                    }
+                ]
+            }
+        }
+    }
+]

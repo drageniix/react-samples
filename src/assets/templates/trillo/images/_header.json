@@ -1,0 +1,12 @@
+[
+    {
+        "path": "logo",
+        "files": [{ "src": "trillo/trillo-logo.png", "size": 200 }],
+        "alt": "header logo"
+    },
+    {
+        "path": "user",
+        "files": [{ "src": "trillo/user.jpg", "size": 200 }],
+        "alt": "user profile"
+    }
+]

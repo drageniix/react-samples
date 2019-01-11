@@ -1,0 +1,7 @@
+{
+    "text" : "Good news! We have 4 free rooms for your selected dates!",
+    "button": {
+        "visible" : "Book Now",
+        "hidden" : "Only 4 rooms left"
+    }
+}

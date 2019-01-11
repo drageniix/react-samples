@@ -1,0 +1,1 @@
+Vulnerabilities caused by tunnel-agent in image-webpack-loader. Exploring alterate ways of automatic compression.

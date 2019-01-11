@@ -1,0 +1,9 @@
+{
+    "title" : "HOTEL LAS PALMAS",
+    "stars": 5,
+    "location" : "Albufeira, Portugal",
+    "userRating" : {
+        "average" : 8.6,
+        "count" : 429
+    }
+}

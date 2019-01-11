@@ -1,0 +1,11 @@
+[
+    {
+        "path": "gallery",
+        "files": [
+            { "src": "trillo/hotel-1.jpg", "size": 200 },
+            { "src": "trillo/hotel-2.jpg", "size": 200 },
+            { "src": "trillo/hotel-3.jpg", "size": 200 }
+        ],
+        "alt": "gallery photo"
+    }
+]
