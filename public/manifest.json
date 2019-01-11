@@ -31,12 +31,12 @@
       "type": "image/png"
     }
   ],
-  "name": "WIA-KC | West Indian Association",
-  "short_name": "WIA-KC",
+  "name": "React Samples - Ashley Barrow",
+  "short_name": "REACT",
   "orientation": "portrait",
   "display": "standalone",
   "start_url": ".",
-  "description": "Bringing West Indian Culture Together in Kansas City",
+  "description": "Demonstrating the power of React and SASS in Front End Development",
   "background_color": "#ffffff",
   "theme_color": "#68a08b"
 }

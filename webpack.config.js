@@ -11,12 +11,13 @@ const path = require('path');
 
 const outputPath = path.resolve(__dirname, 'public/');
 
-const appTitle = 'WIA-KC | West Indian Association';
+const appTitle = 'React Samples - Ashley Barrow';
 const themeColor = '#68a08b';
-const appDescription = 'Bringing West Indian Culture Together in Kansas City';
+const appDescription =
+    'Demonstrating the power of React and SASS in Front End Development';
 const manifest = {
     name: appTitle,
-    short_name: 'WIA-KC',
+    short_name: 'REACT',
     description: appDescription,
     background_color: '#ffffff',
     theme_color: themeColor,
