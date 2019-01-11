@@ -1,22 +1,22 @@
 [
     {
         "name": "about natours",
-        "link": "#about"
+        "link": "/natours/#about"
     },
     {
         "name": "your benefits",
-        "link": "#features"
+        "link": "/natours/#features"
     },
     {
         "name": "popular tours",
-        "link": "#tours"
+        "link": "/natours/#tours"
     },
     {
         "name": "stories",
-        "link": "#stories"
+        "link": "/natours/#stories"
     },
     {
         "name": "book now",
-        "link": "#booking"
+        "link": "/natours/#booking"
     }
 ]

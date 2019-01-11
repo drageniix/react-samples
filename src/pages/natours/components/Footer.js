@@ -16,7 +16,7 @@ const Footer = ({ data }) => (
                 <div className="footer__navigation">
                     <ul className="footer__list">
                         {data.links.map((item, index) => (
-                            <li key={item} className="footer__item">
+                            <li key={index} className="footer__item">
                                 <a href="#" className="footer__link">
                                     {item}
                                 </a>
@@ -28,9 +28,8 @@ const Footer = ({ data }) => (
             <div className="col-1-of-2">
                 <p className="footer__copyright">
                     <a href="#" className="footer__link">
-                        "Jonas Schmedtmann"
+                        {data.credits}
                     </a>
-                    {data.credits}
                 </p>
             </div>
         </div>
