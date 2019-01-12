@@ -48,11 +48,11 @@ class Navigation extends React.Component {
 }
 
 const mapStateToProps = state => ({
-    data: state.navigation
+    data: state.natours.navigation
 });
 
 Navigation.propTypes = {
-    data: PropTypes.object
+    data: PropTypes.array
 };
 
 export default connect(mapStateToProps)(Navigation);

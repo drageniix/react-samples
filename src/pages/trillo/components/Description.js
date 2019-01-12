@@ -35,7 +35,7 @@ export const Description = ({
 );
 
 const mapStateToProps = state => ({
-    data: state.description
+    data: state.trillo.description
 });
 
 Description.propTypes = {

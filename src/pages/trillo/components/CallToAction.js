@@ -13,7 +13,7 @@ export const CallToAction = ({ data: { text, button } }) => (
 );
 
 const mapStateToProps = state => ({
-    data: state.cta
+    data: state.trillo.cta
 });
 
 CallToAction.propTypes = {

@@ -29,22 +29,22 @@ const Stories = ({ data: { background_video, title, stories, button } }) => (
             <h2 className="heading-secondary">{title}</h2>
         </div>
         <div className="row">
-            {portionArray(stories, 2).map((item, index) => (
+            {portionArray(stories, 2).map((story, index) => (
                 <div key={index} className="story">
                     <figure className="story__shape">
                         <ResponsiveImage
                             className="story__img"
-                            image={item.image}
+                            image={story.image}
                         />
                         <figcaption className="story__caption">
-                            {item.caption}
+                            {story.caption}
                         </figcaption>
                     </figure>
                     <div className="story__text">
                         <h3 className="heading-tertiary u-margin-bottom-small">
-                            {item.title}
+                            {story.title}
                         </h3>
-                        <p>{item.text}</p>
+                        <p>{story.text}</p>
                     </div>
                 </div>
             ))}
@@ -58,7 +58,7 @@ const Stories = ({ data: { background_video, title, stories, button } }) => (
 );
 
 const mapStateToProps = state => ({
-    data: state.stories
+    data: state.natours.stories
 });
 
 Stories.propTypes = {

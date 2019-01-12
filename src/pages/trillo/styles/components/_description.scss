@@ -6,28 +6,31 @@
     border-bottom: 1px solid var(--color-grey-light-2);
 
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 
     &__item {
         flex: 0 0 50%;
-        margin-bottom: .7rem;
+        margin-bottom: 0.7rem;
     }
 
     &__item::before {
-        content: "";
+        content: '';
         height: 1rem;
         width: 1rem;
-        margin-right: .7rem;
+        margin-right: 0.7rem;
         display: inline-block;
-        
+
         // Older browsers
-        background-image: url('../assets/images/chevron-thin-right.svg');
+        background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><title>chevron-thin-right</title><path d='M13.25 10l-7.141-7.42c-0.268-0.27-0.268-0.707 0-0.979 0.268-0.27 0.701-0.27 0.969 0l7.83 7.908c0.268 0.271 0.268 0.709 0 0.979l-7.83 7.908c-0.268 0.271-0.701 0.27-0.969 0s-0.268-0.707 0-0.979l7.141-7.417z'></path></svg>");
         background-size: cover;
 
         //Newer browsers - masks
         @supports (-webkit-mask-image: url()) or (mask-image: url()) {
             background-color: var(--color-primary);
-            mask-image: url('../assets/images/chevron-thin-right.svg');
+            mask-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><title>chevron-thin-right</title><path d='M13.25 10l-7.141-7.42c-0.268-0.27-0.268-0.707 0-0.979 0.268-0.27 0.701-0.27 0.969 0l7.83 7.908c0.268 0.271 0.268 0.709 0 0.979l-7.83 7.908c-0.268 0.271-0.701 0.27-0.969 0s-0.268-0.707 0-0.979l7.141-7.417z'></path></svg>");
             mask-size: cover;
             background-image: none;
         }
@@ -40,24 +43,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 
     &__count {
-
     }
 
     &__friends {
         display: flex;
     }
-    
+
     &__photo {
         height: 4rem;
         width: 4rem;
         border-radius: 50%;
         border: 3px solid white;
         box-sizing: content-box;
-        
-        &:not(:last-of-type){
+
+        &:not(:last-of-type) {
             margin-right: -2rem;
         }
     }

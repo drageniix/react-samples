@@ -4,12 +4,15 @@ import thunk from 'redux-thunk';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 export default async isServer => {
-    const data = await fetch('/assets/data/trillo.json').then(res =>
+    const trillo = await fetch('/assets/data/trillo.json').then(res =>
+        res.json()
+    );
+    const natours = await fetch('/assets/data/natours.json').then(res =>
         res.json()
     );
 
     //Sample app, no actions
-    const reducer = (state = data) => state;
+    const reducer = (state = { trillo, natours }) => state;
 
     if (isServer && typeof window === 'undefined') {
         return createStore(reducer, composeEnhancers(applyMiddleware(thunk)));

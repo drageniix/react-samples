@@ -1,9 +1,9 @@
 import React from 'react';
 import ResponsiveImage from 'responsive-json-webpack-plugin/react';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
-const About = ({ data: { tagline, blurbs, more, images} }) => (
+const About = ({ data: { tagline, blurbs, more, images } }) => (
     <section className="section-about" id="about">
         <div className="u-center-text u-margin-bottom-big">
             <h2 className="heading-secondary">{tagline}</h2>
@@ -44,10 +44,10 @@ const About = ({ data: { tagline, blurbs, more, images} }) => (
 
 About.propTypes = {
     data: PropTypes.object
-}
+};
 
 const mapStateToProps = state => ({
-    data: state.about
+    data: state.natours.about
 });
 
 export default connect(mapStateToProps)(About);

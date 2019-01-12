@@ -33,7 +33,7 @@ const Footer = ({ data: { logo, links, credits } }) => (
     </footer>
 );
 const mapStateToProps = state => ({
-    data: state.footer
+    data: state.natours.footer
 });
 
 Footer.propTypes = {

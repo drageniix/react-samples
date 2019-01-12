@@ -57,7 +57,7 @@ const Booking = ({ data: { title, inputs, radio, button } }) => (
     </section>
 );
 const mapStateToProps = state => ({
-    data: state.booking
+    data: state.natours.booking
 });
 
 Booking.propTypes = {

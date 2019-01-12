@@ -21,7 +21,7 @@ export const SideBar = ({ data: { links, legal } }) => (
 );
 
 const mapStateToProps = state => ({
-    data: state.sideBar
+    data: state.trillo.sideBar
 });
 
 SideBar.propTypes = {

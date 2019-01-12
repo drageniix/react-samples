@@ -46,7 +46,7 @@ export const Overview = ({
 };
 
 const mapStateToProps = state => ({
-    data: state.overview
+    data: state.trillo.overview
 });
 
 Overview.propTypes = {

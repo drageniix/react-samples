@@ -5,19 +5,19 @@ import PropTypes from 'prop-types';
 
 export const Reviews = ({ data: { reviewers } }) => (
     <section className="user-reviews">
-        {reviewers.map((item, index) => (
+        {reviewers.map((review, index) => (
             <figure key={index} className="review">
-                <blockquote className="review__text">{item.text}</blockquote>
+                <blockquote className="review__text">{review.text}</blockquote>
                 <figcaption className="review__user">
                     <ResponsiveImage
-                        image={item.image}
+                        image={review.image}
                         className="review__photo"
                     />
                     <div className="review__user-box">
-                        <p className="review__user-name">{item.author}</p>
-                        <p className="review__user-date">{item.date}</p>
+                        <p className="review__user-name">{review.author}</p>
+                        <p className="review__user-date">{review.date}</p>
                     </div>
-                    <div className="review__rating">{item.rating}</div>
+                    <div className="review__rating">{review.rating}</div>
                 </figcaption>
             </figure>
         ))}
@@ -28,7 +28,7 @@ export const Reviews = ({ data: { reviewers } }) => (
 );
 
 const mapStateToProps = state => ({
-    data: state.reviews
+    data: state.trillo.reviews
 });
 
 Reviews.propTypes = {

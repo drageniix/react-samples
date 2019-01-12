@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import SVG from '../../../common/SVG';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
 const Features = ({ data }) => (
     <section className="section-features" id="features">
@@ -21,12 +21,11 @@ const Features = ({ data }) => (
     </section>
 );
 const mapStateToProps = state => ({
-    data: state.features
+    data: state.natours.features
 });
 
 Features.propTypes = {
-    data: PropTypes.object
-}
-
+    data: PropTypes.array
+};
 
 export default connect(mapStateToProps)(Features);

@@ -25,7 +25,7 @@ const Header = ({ data: { logo, main, sub, button } }) => (
 );
 
 const mapStateToProps = state => ({
-    data: state.header
+    data: state.natours.header
 });
 
 Header.propTypes = {

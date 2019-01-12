@@ -72,7 +72,7 @@ Tours.propTypes = {
 };
 
 const mapStateToProps = state => ({
-    data: state.tours
+    data: state.natours.tours
 });
 
 export default connect(mapStateToProps)(Tours);

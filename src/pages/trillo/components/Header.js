@@ -39,7 +39,7 @@ export const Header = ({ data: { logo, user, name } }) => (
 );
 
 const mapStateToProps = state => ({
-    data: state.header
+    data: state.trillo.header
 });
 
 Header.propTypes = {
