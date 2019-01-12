@@ -8,6 +8,7 @@ export default async isServer => {
         res.json()
     );
 
+    //Sample app, no actions
     const reducer = (state = data) => state;
 
     if (isServer && typeof window === 'undefined') {

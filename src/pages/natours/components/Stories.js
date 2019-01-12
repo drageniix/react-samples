@@ -1,6 +1,7 @@
 import React from 'react';
 import ResponsiveImage from 'responsive-json-webpack-plugin/react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 function portionArray(arr, length) {
     if (arr.length >= length) {
@@ -16,19 +17,19 @@ function portionArray(arr, length) {
     return arr;
 }
 
-const Stories = ({ data }) => (
+const Stories = ({ data: { background_video, title, stories, button } }) => (
     <section className="section-stories" id="stories">
         <div className="bg-video">
             <video loop autoPlay muted className="bg-video__content">
-                <source src={data.background_video} type="video/mp4" />
+                <source src={background_video} type="video/mp4" />
                 Your Browser does not support embedded videos!
             </video>
         </div>
         <div className="u-center-text u-margin-bottom-big">
-            <h2 className="heading-secondary">{data.title}</h2>
+            <h2 className="heading-secondary">{title}</h2>
         </div>
         <div className="row">
-            {portionArray(data.stories, 2).map((item, index) => (
+            {portionArray(stories, 2).map((item, index) => (
                 <div key={index} className="story">
                     <figure className="story__shape">
                         <ResponsiveImage
@@ -50,7 +51,7 @@ const Stories = ({ data }) => (
         </div>
         <div className="u-center-text u-margin-top-hude">
             <a href="#" className="btn-text">
-                {data.button}
+                {button}
             </a>
         </div>
     </section>
@@ -59,5 +60,9 @@ const Stories = ({ data }) => (
 const mapStateToProps = state => ({
     data: state.stories
 });
+
+Stories.propTypes = {
+    data: PropTypes.object
+};
 
 export default connect(mapStateToProps)(Stories);

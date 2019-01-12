@@ -1,11 +1,14 @@
 import React from 'react';
 import ResponsiveImage from 'responsive-json-webpack-plugin/react';
+import PropTypes from 'prop-types';
 
-const Popup = ({ data }) => (
-    <div className="popup" onClick={data.closeMethodClick}>
+const Popup = ({
+    data: { closeMethodClick, images, title, subtitle, text, button }
+}) => (
+    <div className="popup" onClick={closeMethodClick}>
         <div className="popup__content">
             <div className="popup__left">
-                {data.images.map((item, index) => (
+                {images.map((item, index) => (
                     <ResponsiveImage
                         className="popup__img"
                         key={index}
@@ -15,20 +18,24 @@ const Popup = ({ data }) => (
             </div>
             <div className="popup__right">
                 <h2 className="heading-secondary u-margin-bottom-small">
-                    {data.title}
+                    {title}
                 </h2>
                 <h3 className="heading-tertiary u-margin-bottom-small">
-                    {data.subtitle}
+                    {subtitle}
                 </h3>
-                <p className="popup__text">{data.text}</p>
+                <p className="popup__text">{text}</p>
                 <div className="popup__button">
                     <a href="#" className="btn btn--green">
-                        {data.button}
+                        {button}
                     </a>
                 </div>
             </div>
         </div>
     </div>
 );
+
+Popup.propTypes = {
+    data: PropTypes.object
+};
 
 export default Popup;

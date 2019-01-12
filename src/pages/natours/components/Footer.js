@@ -1,21 +1,18 @@
 import React from 'react';
 import ResponsiveImage from 'responsive-json-webpack-plugin/react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
-const Footer = ({ data }) => (
+const Footer = ({ data: { logo, links, credits } }) => (
     <footer className="footer">
         <div className="footer__logo-box">
-            <ResponsiveImage
-                image={data.logo}
-                className="footer__logo"
-                alt="logo"
-            />
+            <ResponsiveImage image={logo} className="footer__logo" alt="logo" />
         </div>
         <div className="row">
             <div className="col-1-of-2">
                 <div className="footer__navigation">
                     <ul className="footer__list">
-                        {data.links.map((item, index) => (
+                        {links.map((item, index) => (
                             <li key={index} className="footer__item">
                                 <a href="#" className="footer__link">
                                     {item}
@@ -28,7 +25,7 @@ const Footer = ({ data }) => (
             <div className="col-1-of-2">
                 <p className="footer__copyright">
                     <a href="#" className="footer__link">
-                        {data.credits}
+                        {credits}
                     </a>
                 </p>
             </div>
@@ -38,5 +35,9 @@ const Footer = ({ data }) => (
 const mapStateToProps = state => ({
     data: state.footer
 });
+
+Footer.propTypes = {
+    data: PropTypes.object
+};
 
 export default connect(mapStateToProps)(Footer);

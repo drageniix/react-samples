@@ -2,10 +2,11 @@ import React from 'react';
 import ResponsiveImage from 'responsive-json-webpack-plugin/react';
 import { connect } from 'react-redux';
 import SVG from '../../../common/SVG';
+import PropTypes from 'prop-types';
 
-export const Header = ({ data }) => (
+export const Header = ({ data: { logo, user, name } }) => (
     <header className="header">
-        <ResponsiveImage image={data.logo} className="logo" />
+        <ResponsiveImage image={logo} className="logo" />
         <form action="" className="search">
             <input
                 type="text"
@@ -28,16 +29,21 @@ export const Header = ({ data }) => (
             </div>
             <div className="user-nav__user">
                 <ResponsiveImage
-                    image={data.user}
+                    image={user}
                     className="user-nav__user-photo"
                 />
-                <span className="user-nav__user-name">{data.name}</span>
+                <span className="user-nav__user-name">{name}</span>
             </div>
         </nav>
     </header>
 );
+
 const mapStateToProps = state => ({
     data: state.header
 });
+
+Header.propTypes = {
+    data: PropTypes.object
+};
 
 export default connect(mapStateToProps)(Header);

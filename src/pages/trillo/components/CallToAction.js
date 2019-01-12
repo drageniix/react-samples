@@ -1,18 +1,23 @@
-import React from 'react'
+import React from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
-export const CallToAction = ({ data }) => (
+export const CallToAction = ({ data: { text, button } }) => (
     <section className="cta">
-        <h2 className="cta__book-now">{data.text}</h2>
+        <h2 className="cta__book-now">{text}</h2>
         <button className="btn">
-            <span className="btn__visbile">{data.button.visible}</span>
-            <span className="btn__hidden">{data.button.hidden}</span>
+            <span className="btn__visbile">{button.visible}</span>
+            <span className="btn__hidden">{button.hidden}</span>
         </button>
     </section>
-)
+);
 
 const mapStateToProps = state => ({
     data: state.cta
-})
+});
 
-export default connect(mapStateToProps)(CallToAction)
+CallToAction.propTypes = {
+    data: PropTypes.object
+};
+
+export default connect(mapStateToProps)(CallToAction);

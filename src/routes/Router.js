@@ -16,15 +16,13 @@ const Natours = Loadable({
 
 const Router = () => (
     <BrowserRouter>
-        <div>
-            <div className="main-layout">
-                <main className="main-layout__body">
-                    <Switch>
-                        <Route exact path="/trillo" component={Trillo} />
-                        <Route exact path="/natours" component={Natours} />
-                    </Switch>
-                </main>
-            </div>
+        <div className="main-layout">
+            <main className="main-layout__body">
+                <Switch>
+                    <Route path="/trillo" component={Trillo} />
+                    <Route path="/natours" component={Natours} />
+                </Switch>
+            </main>
         </div>
     </BrowserRouter>
 );

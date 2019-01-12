@@ -1,10 +1,11 @@
 import React from 'react';
 import ResponsiveImage from 'responsive-json-webpack-plugin/react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
-export const Reviews = ({ data }) => (
+export const Reviews = ({ data: { reviewers } }) => (
     <section className="user-reviews">
-        {data.reviewers.map((item, index) => (
+        {reviewers.map((item, index) => (
             <figure key={index} className="review">
                 <blockquote className="review__text">{item.text}</blockquote>
                 <figcaption className="review__user">
@@ -29,5 +30,9 @@ export const Reviews = ({ data }) => (
 const mapStateToProps = state => ({
     data: state.reviews
 });
+
+Reviews.propTypes = {
+    data: PropTypes.object
+};
 
 export default connect(mapStateToProps)(Reviews);

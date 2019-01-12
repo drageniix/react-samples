@@ -1,15 +1,16 @@
 import React from 'react';
 import ResponsiveImage from 'responsive-json-webpack-plugin/react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types'
 
-const About = ({ data }) => (
+const About = ({ data: { tagline, blurbs, more, images} }) => (
     <section className="section-about" id="about">
         <div className="u-center-text u-margin-bottom-big">
-            <h2 className="heading-secondary">{data.tagline}</h2>
+            <h2 className="heading-secondary">{tagline}</h2>
         </div>
         <div className="row">
             <div className="col-1-of-2">
-                {data.blurbs.map((item, index) => (
+                {blurbs.map((item, index) => (
                     <section className="section-about__blurb" key={index}>
                         <h3 className="u-margin-bottom-small heading-tertiary">
                             {item.title}
@@ -20,12 +21,12 @@ const About = ({ data }) => (
                     </section>
                 ))}
                 <a href="#" className="btn-text">
-                    {data.more}
+                    {more}
                 </a>
             </div>
             <div className="col-1-of-2">
                 <div className="composition">
-                    {data.images.map((item, index) => (
+                    {images.map((item, index) => (
                         <ResponsiveImage
                             key={index}
                             image={item}
@@ -40,6 +41,10 @@ const About = ({ data }) => (
         </div>
     </section>
 );
+
+About.propTypes = {
+    data: PropTypes.object
+}
 
 const mapStateToProps = state => ({
     data: state.about
