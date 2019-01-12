@@ -21,6 +21,20 @@ const Router = () => (
                 <Switch>
                     <Route path="/trillo" component={Trillo} />
                     <Route path="/natours" component={Natours} />
+                    <Route
+                        path="/wiakc"
+                        component={() => {
+                            window.location = 'https://wiakc.org';
+                            return null;
+                        }}
+                    />
+                    <Route
+                        path="/3dt"
+                        component={() => {
+                            window.location = 'https://3darktowers.netlify.com';
+                            return null;
+                        }}
+                    />
                 </Switch>
             </main>
         </div>
