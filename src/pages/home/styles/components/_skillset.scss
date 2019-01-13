@@ -1,0 +1,34 @@
+.skillset {
+    margin: 0 auto;
+    display: inline-block;
+    columns: 2;
+    list-style: none;
+
+    &--item {
+        text-align: start;
+        break-inside: avoid;
+        white-space: nowrap;
+        font-size: 2.5rem;
+        animation-name: slideIn;
+        transform: scale(1);
+
+        &:not(:last-child) {
+            padding-right: 2rem;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &::before {
+            content: '';
+            height: 2.5rem;
+            width: 2.5rem;
+            padding-top: 0.5 rem;
+            margin-right: 0.6rem;
+            display: inline-block;
+            background: linear-gradient(to right, #fc00ff, #00dbde);
+            mask-size: cover;
+        }
+    }
+}

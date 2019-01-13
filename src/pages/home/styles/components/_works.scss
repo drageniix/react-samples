@@ -1,0 +1,53 @@
+.works {
+    &__items {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+
+        &:hover &--item {
+            transform: scale(0.8);
+
+            img {
+                filter: blur(2px);
+            }
+
+            &:hover {
+                transform: scale(1);
+
+                img {
+                    filter: none;
+                }
+            }
+        }
+
+        &--item {
+            animation: slideUp 1s;
+            transition: all 0.3s;
+
+            cursor: pointer;
+            overflow: hidden;
+            background-color: rgba(white, 0.8);
+            border: 1px solid transparent;
+            border-radius: 1rem;
+            padding-bottom: 1rem;
+            transform: scale(0.85);
+            transition: all 0.3s;
+            @include clearfix;
+
+            img {
+                width: 35rem;
+
+                @include respond(tabLand) {
+                    width: 50rem;
+                }
+
+                @supports (clip-path: polygon(0 0)) or
+                    (-webkit-clip-path: polygon(0 0)) {
+                    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+                    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+                }
+            }
+        }
+    }
+}

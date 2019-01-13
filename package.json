@@ -1,10 +1,9 @@
 {
-    "name": "drageniix-wiagkc",
     "version": "1.1.0",
-    "description": "West Indian Association of Greater Kansas City",
+    "description": "Ashley Barrow's Portfolio (React)",
     "repository": {
         "type": "git",
-        "url": "https://github.com/drageniix/wiagkc.git"
+        "url": "https://github.com/drageniix/react-samples.git"
     },
     "scripts": {
         "test": "jest --config=jest.config.json --watchAll",
@@ -18,13 +17,12 @@
         "@babel/polyfill": "^7.0.0",
         "react": "^16.6.1",
         "react-dom": "^16.6.1",
-        "react-flatpickr": "^3.6.4",
         "react-loadable": "^5.5.0",
+        "react-particles-js": "^2.4.2",
         "react-redux": "^5.1.1",
         "react-router-dom": "^4.3.1",
         "redux": "^4.0.1",
-        "redux-thunk": "^2.3.0",
-        "socket.io-client": "^2.2.0"
+        "redux-thunk": "^2.3.0"
     },
     "devDependencies": {
         "@babel/cli": "^7.1.5",
@@ -37,7 +35,7 @@
         "autoprefixer": "^9.3.1",
         "babel-eslint": "^10.0.1",
         "babel-loader": "^8.0.4",
-        "clean-webpack-plugin": "^npm 0.1.19",
+        "clean-webpack-plugin": "^0.1.19",
         "copy-webpack-plugin": "^4.6.0",
         "css-loader": "^1.0.1",
         "enzyme": "^3.7.0",

@@ -10,9 +10,10 @@ export default async isServer => {
     const natours = await fetch('/assets/data/natours.json').then(res =>
         res.json()
     );
+    const home = await fetch('/assets/data/home.json').then(res => res.json());
 
     //Sample app, no actions
-    const reducer = (state = { trillo, natours }) => state;
+    const reducer = (state = { trillo, natours, home }) => state;
 
     if (isServer && typeof window === 'undefined') {
         return createStore(reducer, composeEnhancers(applyMiddleware(thunk)));

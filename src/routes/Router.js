@@ -4,6 +4,11 @@ import Loading from '../common/Loading';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
+const Home = Loadable({
+    loader: () => import('../pages/Home/app'),
+    loading: Loading
+});
+
 const Trillo = Loadable({
     loader: () => import('../pages/Trillo/app'),
     loading: Loading
@@ -35,6 +40,7 @@ const Router = () => (
                             return null;
                         }}
                     />
+                    <Route exact path="/" component={Home} />
                 </Switch>
             </main>
         </div>

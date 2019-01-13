@@ -1,0 +1,13 @@
+.summary {
+    padding: 3rem;
+    background-color: rgba(black, 0.8);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    @include respond(tabLand) {
+        order: -1;
+    }
+}

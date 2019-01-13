@@ -1,0 +1,22 @@
+{
+    "name": "Ashley Barrow",
+    "summary": "Likes developing websites!",
+    "links": [
+        {
+            "display": "Github",
+            "url": "https://github.com/drageniix"
+        },
+        {
+            "display": "LinkedIn",
+            "url": "https://www.linkedin.com/in/ashleynmbarrow"
+        },
+        {
+            "display": "Ashley.Barrow@outlook.com",
+            "url": "mailto:ashley.barrow@outlook.com"
+        },
+        {
+            "display": "678-860-2204",
+            "url": "tel:678-860-2204"
+        }
+    ]
+}
