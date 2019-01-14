@@ -5,8 +5,8 @@
     columns: 2;
     list-style: none;
 
-    @include respond(tabPort) {
-        padding: 0.5rem 2rem;
+    @include respond(phone) {
+        padding: 0.5rem 3.5rem;
     }
 
     &--item {
