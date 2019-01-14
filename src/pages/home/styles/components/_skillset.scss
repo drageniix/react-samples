@@ -5,6 +5,10 @@
     columns: 2;
     list-style: none;
 
+    @include respond(tabPort) {
+        padding: 0.5rem 2rem;
+    }
+
     &--item {
         padding-left: 4rem;
         text-align: start;
