@@ -1,0 +1,11 @@
+[
+    {
+        "path": "works.[].image",
+        "set": [
+            { "files": [{ "src": "home/wiakc.png", "size": 300 }] },
+            { "files": [{ "src": "home/3dt.png", "size": 300 }] },
+            { "files": [{ "src": "home/trillo.png", "size": 300 }] },
+            { "files": [{ "src": "home/natours.png", "size": 300 }] }
+        ]
+    }
+]

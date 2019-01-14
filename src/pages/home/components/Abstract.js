@@ -12,14 +12,18 @@ export class Abstract extends Component {
         return (
             <section className="brief">
                 <h1 className="brief__name">{name}</h1>
-                <h4 className="brief__summary">{summary}</h4>
-                <h4 className="brief__links">
+                <p className="brief__summary">{summary}</p>
+                <p className="brief__links">
                     {links.map((link, index) => (
-                        <p key={index}>
-                            <a href={link.url}>{link.display}</a>
-                        </p>
+                        <a
+                            key={index}
+                            href={link.url}
+                            className="brief__links--link"
+                        >
+                            {link.display}
+                        </a>
                     ))}
-                </h4>
+                </p>
             </section>
         );
     }

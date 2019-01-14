@@ -1,8 +1,20 @@
 {
-    "links": [
-        "https://i.redd.it/cldu0iaya1a21.jpg",
-        "https://i.redd.it/l7u8ko9oo3a21.jpg",
-        "https://preview.redd.it/l853t4bksa921.jpg?width=960&crop=smart&auto=webp&s=63bd898ad7f0f346b0415de4d5d59b0d56cc2136",
-        "https://preview.redd.it/mtlda3xhp3921.jpg?width=640&crop=smart&auto=webp&s=4e0441a934fc786ebfc0d544b1ce176147cb3354"
+    "works": [
+        {
+            "name": "West Indian Association of Greater Kansas City",
+            "url": "https://wiakc.org"
+        },
+        {
+            "name": "3 Dark Towers",
+            "url": "https://3darktowers.netlify.com"
+        },
+        {
+            "name": "UX Sample: Trillo",
+            "url": "/trillo"
+        },
+        {
+            "name": "UX Sample: Zoo",
+            "url": "/natours"
+        }
     ]
 }

@@ -1,0 +1,65 @@
+.brief {
+    margin: 2rem 3rem;
+
+    &__name {
+        font-size: 8rem;
+        text-align: center;
+        transition: all 0.3s;
+
+        @include respond(tabPort) {
+            font-size: 5rem;
+        }
+    }
+
+    &__summary {
+        margin-top: -3.5rem;
+        text-align: right;
+        font-size: 1.6rem;
+        transition: all 0.3s;
+
+        @include respond(tabPort) {
+            margin-top: -2rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__links {
+        margin: 2rem 0;
+        display: flex;
+        justify-content: space-around;
+
+        &--link {
+            margin: 0 5px;
+            background: rgba(black, 0.4);
+            white-space: nowrap;
+            break-inside: avoid;
+            font-weight: 500;
+            letter-spacing: 1px;
+            padding: 0 1rem;
+            font-size: 3rem;
+            color: white;
+            transition: all 0.3s;
+            transform: scale(0.9);
+            border-radius: 2px;
+
+            @include respond(tabPort) {
+                font-size: 2rem;
+            }
+        }
+
+        a,
+        a:active,
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            transform: scale(1.1);
+            background: $color-gradient;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgba(white, 0.7);
+        }
+    }
+}

@@ -4,6 +4,8 @@
         justify-content: center;
         align-items: stretch;
         flex-wrap: wrap;
+        transition: all 0.3s;
+        text-align: center;
 
         &:hover &--item {
             transform: scale(0.8);
@@ -19,6 +21,10 @@
                     filter: none;
                 }
             }
+        }
+
+        &--title {
+            font-size: 2rem;
         }
 
         &--item {
@@ -44,7 +50,6 @@
 
                 @supports (clip-path: polygon(0 0)) or
                     (-webkit-clip-path: polygon(0 0)) {
-                    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
                     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
                 }
             }

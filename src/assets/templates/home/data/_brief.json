@@ -1,17 +1,23 @@
 {
     "name": "Ashley Barrow",
-    "summary": "Likes developing websites!",
+    "summary": "Full Stack Web Developer",
     "links": [
         {
             "display": "Github",
             "url": "https://github.com/drageniix"
         },
         {
-            "display": "LinkedIn",
-            "url": "https://www.linkedin.com/in/ashleynmbarrow"
+            "display": "Google Play Store",
+            "url": "https://play.google.com/store/apps/developer?id=Drageniix"
         },
         {
-            "display": "Ashley.Barrow@outlook.com",
+            "display": "LinkedIn",
+            "url": "https://www.linkedin.com/in/ashleynmbarrow"
+        }
+    ],
+    "contacts": [
+        {
+            "display": "ashley.barrow@outlook.com",
             "url": "mailto:ashley.barrow@outlook.com"
         },
         {
