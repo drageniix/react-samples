@@ -42,10 +42,14 @@
             @include clearfix;
 
             img {
-                max-width: 35rem;
+                width: 35rem;
 
                 @include respond(tabLand) {
-                    min-width: 50rem;
+                    width: 50rem;
+                }
+
+                @include respond(phone) {
+                    width: 85%;
                 }
 
                 @supports (clip-path: polygon(0 0)) or

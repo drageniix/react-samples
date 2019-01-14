@@ -2,11 +2,11 @@
     "works": [
         {
             "name": "West Indian Association of Greater Kansas City",
-            "url": "https://wiakc.org"
+            "url": "/wiakc"
         },
         {
             "name": "3 Dark Towers",
-            "url": "https://3darktowers.netlify.com"
+            "url": "/3dt"
         },
         {
             "name": "UX Sample: Trillo",
